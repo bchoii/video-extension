@@ -1,0 +1,26 @@
+{
+  "name": "video-extension",
+  "description": "video-extension",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "clipboardWrite",
+    "clipboardRead",
+    "webRequest",
+    "downloads",
+    "bookmarks",
+    "cookies",
+    "declarativeContent",
+    "storage",
+    "scripting",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "alarms"
+  ],
+  "host_permissions": ["*://*/*"],
+  "content_scripts": [{ "matches": ["*://*/*"], "js": ["contentscript.js"] }],
+  "action": {}
+}
